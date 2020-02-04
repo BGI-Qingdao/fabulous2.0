@@ -56,15 +56,16 @@ int main(int argc , char ** argv)
     };
 
     // -------------------------------------------------------------
-    // Load xxx.1.idx 
+    // Load xxx.1.idx
     auto in_idx1 =  BGIQD::FILES::FileReaderFactory::GenerateReaderFromFileName(idx_1.to_string());
     if( 0 == in_idx1 ) FATAL("failed to open idx_1 to read");
     std::map<unsigned int , BGIQD::APP::Idx> idx_cache1 ; 
-    BGIQD::FILES::FileReaderFactory::EachLine(*in_idx1 , std::bind( load_idx , std::placeholders::_1 , idx_cache1)) ;
+    BGIQD::FILES::FileReaderFactory::EachLine(*in_idx1 , 
+            std::bind( load_idx , std::placeholders::_1 , std::ref(idx_cache1))) ;
     delete in_idx1;
 
     // -------------------------------------------------------------
-    // Load xxx.1.fa 
+    // Load xxx.1.fa
     auto in_fa1 = BGIQD::FILES::FileReaderFactory::GenerateReaderFromFileName(fa_1.to_string());
     if( 0 == in_fa1 ) FATAL("failed to open fa_1 to read");
     FA_READER reader1 ;
@@ -123,7 +124,8 @@ int main(int argc , char ** argv)
     auto in_idx2 =  BGIQD::FILES::FileReaderFactory::GenerateReaderFromFileName(idx_2.to_string());
     if( 0 == in_idx2 ) FATAL("failed to open idx_2 to read");
     std::map<unsigned int , BGIQD::APP::Idx> idx_cache2; 
-    BGIQD::FILES::FileReaderFactory::EachLine(*in_idx2 , std::bind( load_idx , std::placeholders::_1 , idx_cache2)) ;
+    BGIQD::FILES::FileReaderFactory::EachLine(*in_idx2 
+            , std::bind( load_idx , std::placeholders::_1 , std::ref(idx_cache2))) ;
     delete in_idx2;
 
     // -------------------------------------------------------------
