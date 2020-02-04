@@ -1,0 +1,335 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADD_A_FLAG	common/flags/flags.h	8;"	d
+ARGS	common/args/argsparser.h	/^    namespace ARGS{$/;"	n	namespace:BGIQD
+AddHead	biocommon/fasta/fasta.h	/^                void AddHead(const std::string & line)$/;"	f	struct:BGIQD::FASTA::Fasta
+AddPartSeq	biocommon/seq/seq.h	/^            void AddPartSeq( const std::string & line ) { atcgs += line ; }$/;"	f	struct:BGIQD::SEQ::seq
+AddSeq	biocommon/fasta/fasta.h	/^                void AddSeq(const std::string & line )$/;"	f	struct:BGIQD::FASTA::Fasta
+BGIQD	biocommon/fasta/fasta.cpp	/^namespace BGIQD {$/;"	n	file:
+BGIQD	biocommon/fasta/fasta.h	/^namespace BGIQD {$/;"	n
+BGIQD	biocommon/seq/seq.cpp	/^namespace BGIQD {$/;"	n	file:
+BGIQD	biocommon/seq/seq.h	/^namespace BGIQD {$/;"	n
+BGIQD	biocommon/seq/tool_func.h	/^namespace BGIQD{$/;"	n
+BGIQD	common/args/argsparser.h	/^namespace BGIQD{$/;"	n
+BGIQD	common/files/file_reader.cpp	/^namespace BGIQD{$/;"	n	file:
+BGIQD	common/files/file_reader.h	/^namespace BGIQD{$/;"	n
+BGIQD	common/files/file_writer.cpp	/^namespace BGIQD{$/;"	n	file:
+BGIQD	common/files/file_writer.h	/^namespace BGIQD{$/;"	n
+BGIQD	common/freq/freq.h	/^namespace BGIQD{$/;"	n
+BGIQD	common/log/log.cpp	/^namespace BGIQD{$/;"	n	file:
+BGIQD	common/log/log.h	/^namespace BGIQD{$/;"	n
+BGIQD	common/log/logfilter.cpp	/^namespace BGIQD{$/;"	n	file:
+BGIQD	common/log/logfilter.h	/^namespace BGIQD{$/;"	n
+BGIQD	common/string/stringtools.cpp	/^namespace BGIQD{$/;"	n	file:
+BGIQD	common/string/stringtools.h	/^namespace BGIQD{$/;"	n
+BGIQD	common/time/timetools.cpp	/^namespace BGIQD{$/;"	n	file:
+BGIQD	common/time/timetools.h	/^namespace BGIQD{$/;"	n
+CC	src_main/Makefile	/^CC 		   =	gcc$/;"	m
+CXX	src_main/Makefile	/^CXX 	   =	g++$/;"	m
+CXXFLAGS	src_main/Makefile	/^CXXFLAGS   =	-std=c++11\\$/;"	m
+DEFINE_ARG_OPTIONAL	common/args/argsparser.h	330;"	d
+DEFINE_ARG_REQUIRED	common/args/argsparser.h	327;"	d
+DEUBG_CXX	src_main/Makefile	/^DEUBG_CXX  =	${CXXFLAGS} -g$/;"	m
+DIR_OF_THIRD_PARTY	.ycm_extra_conf.py	/^DIR_OF_THIRD_PARTY = p.join( DIR_OF_THIS_SCRIPT, 'third_party' )$/;"	v
+DIR_OF_THIS_SCRIPT	.ycm_extra_conf.py	/^DIR_OF_THIS_SCRIPT = p.abspath( p.dirname( __file__ ) )$/;"	v
+Desc	biocommon/fasta/fasta.h	/^            std::string Desc;$/;"	m	struct:BGIQD::FASTA::Id_Desc_Head
+END_PARSE_ARGS	common/args/argsparser.h	343;"	d
+EachLine	common/files/file_reader.cpp	/^    void FileReaderFactory::EachLine(std::istream & ist , ParseLine parse)$/;"	f	class:BGIQD::FILES::FileReaderFactory
+FASTA	biocommon/fasta/fasta.cpp	/^    namespace FASTA {$/;"	n	namespace:BGIQD	file:
+FASTA	biocommon/fasta/fasta.h	/^    namespace FASTA {$/;"	n	namespace:BGIQD
+FATAL	common/error/Error.h	7;"	d
+FILES	common/files/file_reader.cpp	/^namespace FILES {$/;"	n	namespace:BGIQD	file:
+FILES	common/files/file_reader.h	/^namespace FILES{$/;"	n	namespace:BGIQD
+FILES	common/files/file_writer.cpp	/^namespace FILES{$/;"	n	namespace:BGIQD	file:
+FILES	common/files/file_writer.h	/^namespace FILES{$/;"	n	namespace:BGIQD
+FLAGS_INT	biocommon/fasta/fasta.h	/^                FLAGS_INT ;$/;"	m	struct:BGIQD::FASTA::Fasta
+FLAGS_INT	common/flags/flags.h	6;"	d
+FREQ	common/freq/freq.h	/^    namespace FREQ{$/;"	n	namespace:BGIQD
+Fasta	biocommon/fasta/fasta.h	/^                typedef T Fasta;$/;"	t	struct:BGIQD::FASTA::FastaReader
+Fasta	biocommon/fasta/fasta.h	/^            struct Fasta$/;"	s	namespace:BGIQD::FASTA
+FastaReader	biocommon/fasta/fasta.h	/^            struct FastaReader$/;"	s	namespace:BGIQD::FASTA
+FastaTest	biocommon/fasta/fasta_test.cpp	/^typedef Fasta<SOAP2ContigHead> FastaTest;$/;"	t	file:
+FastaTest1	biocommon/fasta/fasta_test.cpp	/^typedef Fasta<NormalHead> FastaTest1;$/;"	t	file:
+FileReaderFactory	common/files/file_reader.h	/^class FileReaderFactory {$/;"	c	namespace:BGIQD::FILES
+FileWriterFactory	common/files/file_writer.h	/^class FileWriterFactory{$/;"	c	namespace:BGIQD::FILES
+Freq	common/freq/freq.h	/^            class Freq$/;"	c	namespace:BGIQD::FREQ
+GZSTREAM_H	common/files/gzstream.h	37;"	d
+GZSTREAM_NAMESPACE	common/files/gzstream.cpp	/^namespace GZSTREAM_NAMESPACE {$/;"	n	file:
+GZSTREAM_NAMESPACE	common/files/gzstream.h	/^namespace GZSTREAM_NAMESPACE {$/;"	n
+GapType	biocommon/fasta/fasta.h	/^            enum GapType {$/;"	g	struct:BGIQD::FASTA::ScaffSplitGapHead
+GenApp	src_main/GenMake.sh	/^function GenApp()$/;"	f
+GenerateReaderFromFileName	common/files/file_reader.cpp	/^    std::istream * FileReaderFactory::GenerateReaderFromFileName(const std::string & file_name )$/;"	f	class:BGIQD::FILES::FileReaderFactory
+GenerateWriterFromFileName	common/files/file_writer.cpp	/^    std::ostream * FileWriterFactory::GenerateWriterFromFileName( const std::string & file_name )$/;"	f	class:BGIQD::FILES::FileWriterFactory
+GetFreq	common/freq/freq.h	/^                    long GetFreq(const Key k) const $/;"	f	class:BGIQD::FREQ::Freq
+GetStandardLibraryIndexInSysPath	.ycm_extra_conf.py	/^def GetStandardLibraryIndexInSysPath( sys_path ):$/;"	f
+Head	biocommon/fasta/fasta.cpp	/^        std::string SOAP2ContigHead::Head() const {$/;"	f	class:BGIQD::FASTA::SOAP2ContigHead
+Head	biocommon/fasta/fasta.cpp	/^        std::string ScaffSplitGapHead::Head() const $/;"	f	class:BGIQD::FASTA::ScaffSplitGapHead
+Head	biocommon/fasta/fasta.h	/^            std::string Head() const { return ">" + Id +Desc ; }$/;"	f	struct:BGIQD::FASTA::Id_Desc_Head
+Head	biocommon/fasta/fasta.h	/^            std::string Head() const { return head ; }$/;"	f	struct:BGIQD::FASTA::NormalHead
+Header	biocommon/fasta/fasta.h	/^                typedef T Header;$/;"	t	struct:BGIQD::FASTA::Fasta
+INFO_RETURN	common/error/Error.h	20;"	d
+Id	biocommon/fasta/fasta.h	/^            std::string Id;$/;"	m	struct:BGIQD::FASTA::Id_Desc_Head
+Id_Desc_Head	biocommon/fasta/fasta.h	/^        struct Id_Desc_Head$/;"	s	namespace:BGIQD::FASTA
+Init	biocommon/fasta/fasta.cpp	/^        void Id_Desc_Head::Init( const std::string &line )$/;"	f	class:BGIQD::FASTA::Id_Desc_Head
+Init	biocommon/fasta/fasta.cpp	/^        void SOAP2ContigHead::Init( const std::string & line ) $/;"	f	class:BGIQD::FASTA::SOAP2ContigHead
+Init	biocommon/fasta/fasta.cpp	/^        void ScaffSplitGapHead::Init(const std::string & line)$/;"	f	class:BGIQD::FASTA::ScaffSplitGapHead
+Init	biocommon/fasta/fasta.h	/^            void Init( const std::string & line )$/;"	f	struct:BGIQD::FASTA::NormalHead
+IsHead	biocommon/fasta/fasta.h	/^                static bool IsHead(const std::string & line)$/;"	f	struct:BGIQD::FASTA::FastaReader
+IsNum	common/string/stringtools.cpp	/^    bool IsNum(const std::string & str)$/;"	f	namespace:BGIQD::STRING
+Is_Setted	biocommon/fasta/fasta.h	/^                bool Is_Setted() const { $/;"	f	struct:BGIQD::FASTA::Fasta
+LOG	common/log/log.cpp	/^namespace LOG{$/;"	n	namespace:BGIQD	file:
+LOG	common/log/log.h	/^namespace LOG{$/;"	n	namespace:BGIQD
+LOG	common/log/logfilter.cpp	/^namespace LOG {$/;"	n	namespace:BGIQD	file:
+LOG	common/log/logfilter.h	/^namespace LOG{$/;"	n	namespace:BGIQD
+Len	biocommon/seq/seq.h	/^            int Len() const { return atcgs.size() ; }$/;"	f	struct:BGIQD::SEQ::seq
+LoadAllFasta	biocommon/fasta/fasta.h	/^                static void LoadAllFasta( std::istream & ist , std::vector<Fasta> & buffer )$/;"	f	struct:BGIQD::FASTA::FastaReader
+LoadNextFasta	biocommon/fasta/fasta.h	/^                static bool LoadNextFasta(std::istream & ist , Fasta & fa)$/;"	f	struct:BGIQD::FASTA::FastaReader
+NLen	biocommon/seq/seq.h	/^            int NLen() const { int ret = 0 ;for( char x: atcgs ) if ( x == 'n' || x == 'N' ) ret ++ ; return ret ;}$/;"	f	struct:BGIQD::SEQ::seq
+NormalHead	biocommon/fasta/fasta.h	/^        struct NormalHead$/;"	s	namespace:BGIQD::FASTA
+PE	biocommon/fasta/fasta.h	/^                PE =1 ,$/;"	e	enum:BGIQD::FASTA::ScaffSplitGapHead::GapType
+PE_TRUNK	biocommon/fasta/fasta.h	/^                PE_TRUNK = 2 ,$/;"	e	enum:BGIQD::FASTA::ScaffSplitGapHead::GapType
+ParseLine	common/files/file_reader.h	/^        typedef std::function<void(const std::string & line)> ParseLine;$/;"	t	class:BGIQD::FILES::FileReaderFactory
+PythonSysPath	.ycm_extra_conf.py	/^def PythonSysPath( **kwargs ):$/;"	f
+RELEASE_CXX	src_main/Makefile	/^RELEASE_CXX=	${CXXFLAGS}$/;"	m
+Reader	biocommon/fasta/fasta_test.cpp	/^typedef FastaReader<FastaTest> Reader;$/;"	t	file:
+Reader1	biocommon/fasta/fasta_test.cpp	/^typedef FastaReader<FastaTest1> Reader1;$/;"	t	file:
+Reset	biocommon/fasta/fasta.h	/^                void Reset() $/;"	f	struct:BGIQD::FASTA::Fasta
+Reset	biocommon/fasta/fasta.h	/^            void Reset() { Id.clear() ; Desc.clear() ;} $/;"	f	struct:BGIQD::FASTA::Id_Desc_Head
+Reset	biocommon/fasta/fasta.h	/^            void Reset() { head.clear() ;} $/;"	f	struct:BGIQD::FASTA::NormalHead
+Reset	biocommon/fasta/fasta.h	/^            void Reset(){ contigId = 0 ; is_tip = 0 ; cov = 0 ; len = 0;  } ;$/;"	f	struct:BGIQD::FASTA::SOAP2ContigHead
+Reset	biocommon/fasta/fasta.h	/^            void Reset(){$/;"	f	struct:BGIQD::FASTA::ScaffSplitGapHead
+Reset	biocommon/seq/seq.h	/^            void Reset() { atcgs.clear() ; }$/;"	f	struct:BGIQD::SEQ::seq
+ResizeBuff	common/files/file_reader.cpp	/^    void FileReaderFactory::ResizeBuff( std::istream & ist, size_t size )$/;"	f	class:BGIQD::FILES::FileReaderFactory
+ResizeBuff	common/files/file_writer.cpp	/^    void FileWriterFactory::ResizeBuff( std::ostream & ist, size_t size )$/;"	f	class:BGIQD::FILES::FileWriterFactory
+ReverseCompleteSeq	biocommon/seq/seq.cpp	/^            std::string seq::ReverseCompleteSeq(int weight) const$/;"	f	class:BGIQD::SEQ::seq
+SEQ	biocommon/seq/seq.cpp	/^    namespace SEQ {$/;"	n	namespace:BGIQD	file:
+SEQ	biocommon/seq/seq.h	/^    namespace SEQ {$/;"	n	namespace:BGIQD
+SEQ	biocommon/seq/tool_func.h	/^    namespace SEQ{$/;"	n	namespace:BGIQD
+SOAP2ContigHead	biocommon/fasta/fasta.h	/^        struct SOAP2ContigHead $/;"	s	namespace:BGIQD::FASTA
+START_PARSE_ARGS	common/args/argsparser.h	322;"	d
+STRING	common/string/stringtools.cpp	/^namespace STRING{$/;"	n	namespace:BGIQD	file:
+STRING	common/string/stringtools.h	/^namespace STRING{$/;"	n	namespace:BGIQD
+ScaffSplitGapHead	biocommon/fasta/fasta.h	/^        struct ScaffSplitGapHead$/;"	s	namespace:BGIQD::FASTA
+Seq	biocommon/seq/seq.cpp	/^            std::string seq::Seq(int weight ) const$/;"	f	class:BGIQD::SEQ::seq
+Settings	.ycm_extra_conf.py	/^def Settings( **kwargs ):$/;"	f
+Split_cpp	src_main/Makefile	/^Split_cpp = Split.cpp$/;"	m
+Split_o	src_main/Makefile	/^Split_o = Split.o$/;"	m
+TEST	biocommon/fasta/fasta_test.cpp	/^TEST(LoadTest01)$/;"	f
+TEST	biocommon/fasta/fasta_test.cpp	/^TEST(LoadTest02)$/;"	f
+TEST	biocommon/fasta/fasta_test.cpp	/^TEST(LoadTest03)$/;"	f
+TEST	biocommon/fasta/fasta_test.cpp	/^TEST(LoadTest04)$/;"	f
+TEST	biocommon/seq/seq_test.cpp	/^TEST(LoadSeqTest01)$/;"	f
+TEST	common/args/argsparser_test.cpp	/^TEST(simulator_args)$/;"	f
+TEST	common/files/file_test.cpp	/^TEST(ReaderUnExisitFile)$/;"	f
+TEST	common/string/stringtools_test.cpp	/^TEST(stringsplit)$/;"	f
+TEST	common/string/stringtools_test.cpp	/^TEST(stringtrim)$/;"	f
+TEST	common/time/timetools_test.cpp	/^TEST( multi_thread_run)$/;"	f
+TEST	common/time/timetools_test.cpp	/^TEST(timepoint_test)$/;"	f
+TIME	common/time/timetools.cpp	/^namespace TIME{$/;"	n	namespace:BGIQD	file:
+TIME	common/time/timetools.h	/^namespace TIME{$/;"	n	namespace:BGIQD
+TRUNK	biocommon/fasta/fasta.h	/^                TRUNK = 3$/;"	e	enum:BGIQD::FASTA::ScaffSplitGapHead::GapType
+ToString	common/freq/freq.h	/^                    std::string ToString() const$/;"	f	class:BGIQD::FREQ::Freq
+Touch	common/freq/freq.h	/^                    void Touch( const Key k , int num = 1)$/;"	f	class:BGIQD::FREQ::Freq
+UNKNOW	biocommon/fasta/fasta.h	/^                UNKNOW = 0 ,$/;"	e	enum:BGIQD::FASTA::ScaffSplitGapHead::GapType
+WARN	common/error/Error.h	15;"	d
+__BIOCOMMON_FASTA_FASTA_H__	biocommon/fasta/fasta.h	2;"	d
+__BIOCOMMON_SEQ_SEQ_H__	biocommon/seq/seq.h	2;"	d
+__BIOCOMMON_SEQ_TOOL_FUNC_H__	biocommon/seq/tool_func.h	2;"	d
+__CHECK_ARGS	common/args/argsparser.h	298;"	d
+__CHECK_HELP	common/args/argsparser.h	333;"	d
+__COMMON_ARGS_ARGS_PARSER_H__	common/args/argsparser.h	2;"	d
+__COMMON_ERROR_H__	common/error/Error.h	2;"	d
+__COMMON_FILES_FILE_READER_H__	common/files/file_reader.h	2;"	d
+__COMMON_FILES_FILE_WRITER_H__	common/files/file_writer.h	2;"	d
+__COMMON_FLAGS_FLAGS_H__	common/flags/flags.h	2;"	d
+__COMMON_FREQ_FREQ_H__	common/freq/freq.h	2;"	d
+__COMMON_LOG_LOGFILTER_H__	common/log/logfilter.h	2;"	d
+__COMMON_LOG_LOG_H__	common/log/log.h	2;"	d
+__COMMON_STRING_STRINGTOOLS_H__	common/string/stringtools.h	2;"	d
+__COMMON_TIME_TIMETOOL_H__	common/time/timetools.h	2;"	d
+__CONSTRUCT_LONG_OPTIONS	common/args/argsparser.h	253;"	d
+__DEFINE_ARG_DETAIL	common/args/argsparser.h	317;"	d
+__PARSE_ARGS	common/args/argsparser.h	278;"	d
+__PRINT_ARGS	common/args/argsparser.h	289;"	d
+__PRINT_USAGE	common/args/argsparser.h	237;"	d
+arg_index	common/args/argsparser.h	/^        static int arg_index = 0 ;$/;"	m	namespace:BGIQD::ARGS
+arg_max	common/args/argsparser.h	/^        const int arg_max = 10 ;$/;"	m	namespace:BGIQD::ARGS
+args_to_string	common/args/argsparser.h	/^            std::string args_to_string() $/;"	f	struct:BGIQD::ARGS::args_union
+args_traits	common/args/argsparser.h	/^            struct args_traits$/;"	s	namespace:BGIQD::ARGS
+args_traits	common/args/argsparser.h	/^            struct args_traits< bool >$/;"	s	namespace:BGIQD::ARGS
+args_traits	common/args/argsparser.h	/^            struct args_traits<float>$/;"	s	namespace:BGIQD::ARGS
+args_traits	common/args/argsparser.h	/^            struct args_traits<int>$/;"	s	namespace:BGIQD::ARGS
+args_traits	common/args/argsparser.h	/^            struct args_traits<long>$/;"	s	namespace:BGIQD::ARGS
+args_traits	common/args/argsparser.h	/^            struct args_traits<std::string>$/;"	s	namespace:BGIQD::ARGS
+args_traits	common/args/argsparser.h	/^            struct args_traits<std::vector<std::string> >$/;"	s	namespace:BGIQD::ARGS
+args_union	common/args/argsparser.h	/^            args_union(type ty$/;"	f	struct:BGIQD::ARGS::args_union
+args_union	common/args/argsparser.h	/^        struct args_union$/;"	s	namespace:BGIQD::ARGS
+atcgs	biocommon/seq/seq.h	/^            std::string atcgs;$/;"	m	struct:BGIQD::SEQ::seq
+b	common/args/argsparser.h	/^                bool b;$/;"	m	union:BGIQD::ARGS::args_union::data
+blockSeq	biocommon/seq/tool_func.h	/^        static std::string blockSeq(const std::string & atcgs , int weight )$/;"	f	namespace:BGIQD::SEQ
+buf	common/files/gzstream.h	/^    gzstreambuf buf;$/;"	m	class:GZSTREAM_NAMESPACE::gzstreambase
+buffer	common/files/gzstream.h	/^    char             buffer[bufferSize]; \/\/ data buffer$/;"	m	class:GZSTREAM_NAMESPACE::gzstreambuf
+buffer	common/log/log.h	/^        std::ostringstream buffer;$/;"	m	class:BGIQD::LOG::logger
+bufferSize	common/files/gzstream.h	/^    static const int bufferSize = 47+256;    \/\/ size of data buff$/;"	m	class:GZSTREAM_NAMESPACE::gzstreambuf
+close	common/files/gzstream.cpp	/^gzstreambuf * gzstreambuf::close() {$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambuf
+close	common/files/gzstream.cpp	/^void gzstreambase::close() {$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambase
+contigId	biocommon/fasta/fasta.h	/^            unsigned int contigId ;$/;"	m	struct:BGIQD::FASTA::SOAP2ContigHead
+cov	biocommon/fasta/fasta.h	/^            float cov;$/;"	m	struct:BGIQD::FASTA::SOAP2ContigHead
+cpu	common/time/timetools.h	/^        clock_t cpu;$/;"	m	struct:BGIQD::TIME::timeperoid
+cpu	common/time/timetools.h	/^        clock_t cpu;$/;"	m	struct:BGIQD::TIME::timepoint
+d	common/args/argsparser.h	/^            data d;$/;"	m	struct:BGIQD::ARGS::args_union
+data	common/args/argsparser.h	/^            union data {$/;"	u	struct:BGIQD::ARGS::args_union
+data	common/freq/freq.h	/^                    std::map<Key, long> data;$/;"	m	class:BGIQD::FREQ::Freq
+default_value	common/args/argsparser.h	/^            std::string default_value ;$/;"	m	struct:BGIQD::ARGS::args_union
+detaillog	common/log/log.h	/^        detaillog( const std::string m, const std::string l)$/;"	f	class:BGIQD::LOG::detaillog
+detaillog	common/log/log.h	/^class detaillog$/;"	c	namespace:BGIQD::LOG
+dirty	src_main/Makefile	/^dirty	   =${jobs_o} ${jobs} ${source_o}$/;"	m
+explain	common/args/argsparser.h	/^            std::string explain;$/;"	m	struct:BGIQD::ARGS::args_union
+f	common/args/argsparser.h	/^                float f;$/;"	m	union:BGIQD::ARGS::args_union::data
+file	common/files/gzstream.h	/^    gzFile           file;               \/\/ file handle for compressed file$/;"	m	class:GZSTREAM_NAMESPACE::gzstreambuf
+filename	common/log/logfilter.h	/^            std::string filename;$/;"	m	struct:BGIQD::LOG::logfilter::modulelogrole
+filename	common/log/logfilter.h	/^            std::string filename;$/;"	m	struct:BGIQD::LOG::logfilter::specialrole
+final	common/log/log.h	/^        virtual std::string logstring(const std::string & str) final ;$/;"	m	class:BGIQD::LOG::detaillog
+flags	.ycm_extra_conf.py	/^flags = [$/;"	v
+flush_buffer	common/files/gzstream.cpp	/^int gzstreambuf::flush_buffer() {$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambuf
+gap_index	biocommon/fasta/fasta.h	/^            int gap_index ;$/;"	m	struct:BGIQD::FASTA::ScaffSplitGapHead
+gap_type	biocommon/fasta/fasta.h	/^            } gap_type ;$/;"	m	struct:BGIQD::FASTA::ScaffSplitGapHead	typeref:enum:BGIQD::FASTA::ScaffSplitGapHead::GapType
+get	common/log/logfilter.cpp	/^    void logfilter::get(const std::string module, BGIQD::LOG::loglevel level, logger & ret)$/;"	f	class:BGIQD::LOG::logfilter
+get_type	common/args/argsparser.h	/^            static std::string get_type( type t)$/;"	f	struct:BGIQD::ARGS::args_union
+gzstreambase	common/files/gzstream.cpp	/^gzstreambase::gzstreambase( const char* name, int mode) {$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambase
+gzstreambase	common/files/gzstream.h	/^    gzstreambase() { init(&buf); }$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambase
+gzstreambase	common/files/gzstream.h	/^class gzstreambase : virtual public std::ios {$/;"	c	namespace:GZSTREAM_NAMESPACE
+gzstreambuf	common/files/gzstream.h	/^    gzstreambuf() : opened(0) {$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambuf
+gzstreambuf	common/files/gzstream.h	/^class gzstreambuf : public std::streambuf {$/;"	c	namespace:GZSTREAM_NAMESPACE
+head	biocommon/fasta/fasta.h	/^                Header head;$/;"	m	struct:BGIQD::FASTA::Fasta
+head	biocommon/fasta/fasta.h	/^            std::string head;$/;"	m	struct:BGIQD::FASTA::NormalHead
+i	common/args/argsparser.h	/^                int i;$/;"	m	union:BGIQD::ARGS::args_union::data
+igzstream	common/files/gzstream.h	/^    igzstream( const char* name, int open_mode = std::ios::in)$/;"	f	class:GZSTREAM_NAMESPACE::igzstream
+igzstream	common/files/gzstream.h	/^    igzstream() : std::istream( &buf) {} $/;"	f	class:GZSTREAM_NAMESPACE::igzstream
+igzstream	common/files/gzstream.h	/^class igzstream : public gzstreambase, public std::istream {$/;"	c	namespace:GZSTREAM_NAMESPACE
+ilogtheme	common/log/log.h	/^class ilogtheme$/;"	c	namespace:BGIQD::LOG
+infos	common/args/argsparser.h	/^        static std::map<int,args_union*>  infos;$/;"	m	namespace:BGIQD::ARGS
+input	biocommon/fasta/fasta_test.cpp	/^    std::string  input = ">3 length 64 cvg_0.0_tip_0\\n\\$/;"	v
+isSeqPalindrome	biocommon/seq/tool_func.h	/^        static bool isSeqPalindrome(const std::string & line)$/;"	f	namespace:BGIQD::SEQ
+is_bool	common/args/argsparser.h	/^                is_bool = 0,$/;"	e	enum:BGIQD::ARGS::args_union::type
+is_float	common/args/argsparser.h	/^                is_float = 4,$/;"	e	enum:BGIQD::ARGS::args_union::type
+is_int	common/args/argsparser.h	/^                is_int = 2,$/;"	e	enum:BGIQD::ARGS::args_union::type
+is_long	common/args/argsparser.h	/^                is_long = 3,$/;"	e	enum:BGIQD::ARGS::args_union::type
+is_open	common/files/gzstream.h	/^    int is_open() { return opened; }$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambuf
+is_string	common/args/argsparser.h	/^                is_string = 1,$/;"	e	enum:BGIQD::ARGS::args_union::type
+is_tip	biocommon/fasta/fasta.h	/^            int is_tip ;$/;"	m	struct:BGIQD::FASTA::SOAP2ContigHead
+is_vector_string	common/args/argsparser.h	/^                is_vector_string = 5,$/;"	e	enum:BGIQD::ARGS::args_union::type
+itos	common/string/stringtools.cpp	/^    std::string itos( int i )$/;"	f	namespace:BGIQD::STRING
+jobdec	common/log/log.h	/^        std::string jobdec;$/;"	m	class:BGIQD::LOG::timer
+jobs	src_main/Makefile	/^jobs = Split $/;"	m
+jobs_o	src_main/Makefile	/^jobs_o=  ${Split_o}$/;"	m
+l	common/args/argsparser.h	/^                long l;$/;"	m	union:BGIQD::ARGS::args_union::data
+l	common/log/log.h	/^        logger & l;$/;"	m	class:BGIQD::LOG::timer
+len	biocommon/fasta/fasta.h	/^            int len ;$/;"	m	struct:BGIQD::FASTA::SOAP2ContigHead
+lend	common/log/log.h	/^struct lend{};$/;"	s	namespace:BGIQD::LOG
+level	common/log/log.h	/^        std::string level;$/;"	m	class:BGIQD::LOG::detaillog
+levelname	common/log/logfilter.h	/^        static std::string levelname(loglevel l)$/;"	f	class:BGIQD::LOG::logfilter
+logfilter	common/log/logfilter.h	/^        logfilter(){}$/;"	f	class:BGIQD::LOG::logfilter
+logfilter	common/log/logfilter.h	/^class logfilter$/;"	c	namespace:BGIQD::LOG
+logger	common/log/log.h	/^class logger$/;"	c	namespace:BGIQD::LOG
+logstring	common/log/log.cpp	/^    std::string detaillog::logstring(const std::string & str)$/;"	f	class:BGIQD::LOG::detaillog
+long_options	common/args/argsparser.h	/^        static struct option long_options[arg_max];$/;"	m	namespace:BGIQD::ARGS	typeref:struct:BGIQD::ARGS::option
+lstart	common/log/log.h	/^struct lstart {};$/;"	s	namespace:BGIQD::LOG
+ltrim	common/string/stringtools.cpp	/^    std::string ltrim(const std::string & str)$/;"	f	namespace:BGIQD::STRING
+main	src_main/Split.cpp	/^int main()$/;"	f
+maxlevel	common/log/logfilter.h	/^            loglevel maxlevel;$/;"	m	struct:BGIQD::LOG::logfilter::modulelogrole
+maxlevel	common/log/logfilter.h	/^            loglevel maxlevel;$/;"	m	struct:BGIQD::LOG::logfilter::specialrole
+mode	common/files/gzstream.h	/^    int              mode;               \/\/ I\/O mode$/;"	m	class:GZSTREAM_NAMESPACE::gzstreambuf
+module	common/log/log.h	/^        std::string module;$/;"	m	class:BGIQD::LOG::detaillog
+module	common/log/logfilter.h	/^            std::string module;$/;"	m	struct:BGIQD::LOG::logfilter::modulelogrole
+module	common/log/logfilter.h	/^            std::string module;$/;"	m	struct:BGIQD::LOG::logfilter::specialrole
+modulelogrole	common/log/logfilter.h	/^        struct modulelogrole$/;"	s	class:BGIQD::LOG::logfilter
+name	common/args/argsparser.h	/^            std::string name ;$/;"	m	struct:BGIQD::ARGS::args_union
+next_base_contig	biocommon/fasta/fasta.h	/^            int next_base_contig;$/;"	m	struct:BGIQD::FASTA::ScaffSplitGapHead
+next_contig	biocommon/fasta/fasta.h	/^            int next_contig ;$/;"	m	struct:BGIQD::FASTA::ScaffSplitGapHead
+now	common/time/timetools.h	/^        static timepoint now() $/;"	f	struct:BGIQD::TIME::timepoint
+ogzstream	common/files/gzstream.h	/^    ogzstream( const char* name, int mode = std::ios::out)$/;"	f	class:GZSTREAM_NAMESPACE::ogzstream
+ogzstream	common/files/gzstream.h	/^    ogzstream() : std::ostream( &buf) {}$/;"	f	class:GZSTREAM_NAMESPACE::ogzstream
+ogzstream	common/files/gzstream.h	/^class ogzstream : public gzstreambase, public std::ostream {$/;"	c	namespace:GZSTREAM_NAMESPACE
+on	common/log/logfilter.h	/^            bool on;$/;"	m	struct:BGIQD::LOG::logfilter::specialrole
+open	common/files/gzstream.cpp	/^gzstreambuf* gzstreambuf::open( const char* name, int open_mode) {$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambuf
+open	common/files/gzstream.cpp	/^void gzstreambase::open( const char* name, int open_mode) {$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambase
+open	common/files/gzstream.h	/^    void open( const char* name, int open_mode = std::ios::in) {$/;"	f	class:GZSTREAM_NAMESPACE::igzstream
+open	common/files/gzstream.h	/^    void open( const char* name, int open_mode = std::ios::out) {$/;"	f	class:GZSTREAM_NAMESPACE::ogzstream
+opened	common/files/gzstream.h	/^    char             opened;             \/\/ open\/close state of stream$/;"	m	class:GZSTREAM_NAMESPACE::gzstreambuf
+operator +	common/time/timetools.cpp	/^    timeperoid timeperoid::operator+( const timeperoid & back_period ) const$/;"	f	class:BGIQD::TIME::timeperoid
+operator +	common/time/timetools.cpp	/^    timepoint timepoint::operator+( const timeperoid & back_period ) const$/;"	f	class:BGIQD::TIME::timepoint
+operator -	common/time/timetools.cpp	/^    timeperoid timeperoid::operator-( const timeperoid & back_period ) const$/;"	f	class:BGIQD::TIME::timeperoid
+operator -	common/time/timetools.cpp	/^    timeperoid timepoint::operator-( const timepoint & prev_point ) const $/;"	f	class:BGIQD::TIME::timepoint
+operator -	common/time/timetools.cpp	/^    timepoint timepoint::operator-( const timeperoid & back_period ) const$/;"	f	class:BGIQD::TIME::timepoint
+operator <<	common/log/log.h	/^        logger & operator << (const T & t)$/;"	f	class:BGIQD::LOG::logger
+operator <<	common/log/log.h	/^        logger & operator << (const lend & )$/;"	f	class:BGIQD::LOG::logger
+operator <<	common/log/log.h	/^        logger & operator << (const lstart & )$/;"	f	class:BGIQD::LOG::logger
+optional	common/args/argsparser.h	/^            bool optional;$/;"	m	struct:BGIQD::ARGS::args_union
+ost	common/log/log.h	/^        std::ostream * ost;$/;"	m	class:BGIQD::LOG::logger
+overflow	common/files/gzstream.cpp	/^int gzstreambuf::overflow( int c) { \/\/ used for output buffer only$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambuf
+prev_base_contig	biocommon/fasta/fasta.h	/^            int prev_base_contig;$/;"	m	struct:BGIQD::FASTA::ScaffSplitGapHead
+prev_contig	biocommon/fasta/fasta.h	/^            int prev_contig ;$/;"	m	struct:BGIQD::FASTA::ScaffSplitGapHead
+rdbuf	common/files/gzstream.h	/^    gzstreambuf* rdbuf() { return &buf; }$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambase
+rdbuf	common/files/gzstream.h	/^    gzstreambuf* rdbuf() { return gzstreambase::rdbuf(); }$/;"	f	class:GZSTREAM_NAMESPACE::igzstream
+rdbuf	common/files/gzstream.h	/^    gzstreambuf* rdbuf() { return gzstreambase::rdbuf(); }$/;"	f	class:GZSTREAM_NAMESPACE::ogzstream
+replace_all	common/string/stringtools.cpp	/^    void replace_all( std::string &strBig,$/;"	f	namespace:BGIQD::STRING
+roles	common/log/logfilter.h	/^        std::vector<specialrole> roles;$/;"	m	class:BGIQD::LOG::logfilter
+rtrim	common/string/stringtools.cpp	/^    std::string rtrim(const std::string & str)$/;"	f	namespace:BGIQD::STRING
+s	common/args/argsparser.h	/^                std::string *s;$/;"	m	union:BGIQD::ARGS::args_union::data
+scaff_id	biocommon/fasta/fasta.h	/^            int scaff_id ;$/;"	m	struct:BGIQD::FASTA::ScaffSplitGapHead
+seq	biocommon/fasta/fasta.h	/^                BGIQD::SEQ::seq seq;$/;"	m	struct:BGIQD::FASTA::Fasta
+seq	biocommon/seq/seq.h	/^        struct seq$/;"	s	namespace:BGIQD::SEQ
+seqCompleteReverse	biocommon/seq/tool_func.h	/^        static std::string seqCompleteReverse(const std::string & line)$/;"	f	namespace:BGIQD::SEQ
+set_value	common/args/argsparser.h	/^            void set_value( const  char * value , bool df )$/;"	f	struct:BGIQD::ARGS::args_union
+setted	common/args/argsparser.h	/^            bool setted ;$/;"	m	struct:BGIQD::ARGS::args_union
+simplelog	common/log/log.h	/^class simplelog$/;"	c	namespace:BGIQD::LOG
+singleton	common/log/logfilter.cpp	/^    logfilter & logfilter::singleton() $/;"	f	class:BGIQD::LOG::logfilter
+source_cpp	src_main/Makefile	/^source_cpp =	..\/common\/files\/file_reader.cpp \\$/;"	m
+source_o	src_main/Makefile	/^source_o		= ${source_cpp:%.cpp=%.o}$/;"	m
+specialrole	common/log/logfilter.h	/^        struct specialrole$/;"	s	class:BGIQD::LOG::logfilter
+split	common/string/stringtools.cpp	/^    std::vector<std::string>  split( const std::string & str , const char& spliter ) $/;"	f	namespace:BGIQD::STRING
+split	common/string/stringtools.cpp	/^    std::vector<std::string>  split( const std::string & str , const std::string & spliter ) $/;"	f	namespace:BGIQD::STRING
+split	common/string/stringtools.cpp	/^    std::vector<std::string>  split( const std::string & str) $/;"	f	namespace:BGIQD::STRING
+start	common/log/log.h	/^        TIME::timepoint start ;$/;"	m	class:BGIQD::LOG::timer
+sync	common/files/gzstream.cpp	/^int gzstreambuf::sync() {$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambuf
+t	common/args/argsparser.h	/^            type t;$/;"	m	struct:BGIQD::ARGS::args_union
+the_one	common/log/logfilter.cpp	/^    logfilter* logfilter::the_one = NULL ;$/;"	m	class:BGIQD::LOG::logfilter	file:
+the_one	common/log/logfilter.h	/^        static logfilter * the_one ;$/;"	m	class:BGIQD::LOG::logfilter
+theme	common/log/log.h	/^        ilogtheme * theme;$/;"	m	class:BGIQD::LOG::logger
+themes	common/log/logfilter.h	/^        std::vector<ilogtheme *>themes;$/;"	m	class:BGIQD::LOG::logfilter
+timeperoid	common/time/timetools.h	/^struct timeperoid $/;"	s	namespace:BGIQD::TIME
+timepoint	common/time/timetools.h	/^struct timepoint$/;"	s	namespace:BGIQD::TIME
+timer	common/log/log.h	/^        timer( logger & a_logger , const std::string &job_description)$/;"	f	class:BGIQD::LOG::timer
+timer	common/log/log.h	/^class timer$/;"	c	namespace:BGIQD::LOG
+to_bool	common/args/argsparser.h	/^            bool to_bool() const { assert(t == is_bool); return d.b ; }$/;"	f	struct:BGIQD::ARGS::args_union
+to_float	common/args/argsparser.h	/^            float to_float() const { assert( t== is_float) ; return d.f ; }$/;"	f	struct:BGIQD::ARGS::args_union
+to_int	common/args/argsparser.h	/^            int to_int() const { assert( t == is_int) ; return d.i ; }$/;"	f	struct:BGIQD::ARGS::args_union
+to_long	common/args/argsparser.h	/^            long to_long() const { assert(t == is_long) ;return d.l ; }$/;"	f	struct:BGIQD::ARGS::args_union
+to_string	common/args/argsparser.h	/^            std::string to_string() const $/;"	f	struct:BGIQD::ARGS::args_union
+to_string	common/time/timetools.cpp	/^    std::string timeperoid::to_string() const $/;"	f	class:BGIQD::TIME::timeperoid
+to_string	common/time/timetools.cpp	/^    std::string timepoint::to_string() const $/;"	f	class:BGIQD::TIME::timepoint
+to_vector_string	common/args/argsparser.h	/^            std::vector<std::string> to_vector_string() const $/;"	f	struct:BGIQD::ARGS::args_union
+trim	common/string/stringtools.cpp	/^    std::string trim(const std::string & str)$/;"	f	namespace:BGIQD::STRING
+type	common/args/argsparser.h	/^                args_union::type type() { return args_union::type::is_bool; }$/;"	f	struct:BGIQD::ARGS::args_traits
+type	common/args/argsparser.h	/^                args_union::type type() { return args_union::type::is_float; }$/;"	f	struct:BGIQD::ARGS::args_traits
+type	common/args/argsparser.h	/^                args_union::type type() { return args_union::type::is_int ; }$/;"	f	struct:BGIQD::ARGS::args_traits
+type	common/args/argsparser.h	/^                args_union::type type() { return args_union::type::is_string; }$/;"	f	struct:BGIQD::ARGS::args_traits
+type	common/args/argsparser.h	/^                args_union::type type() { return args_union::type::is_vector_string; }$/;"	f	struct:BGIQD::ARGS::args_traits
+type	common/args/argsparser.h	/^            enum type $/;"	g	struct:BGIQD::ARGS::args_union
+underflow	common/files/gzstream.cpp	/^int gzstreambuf::underflow() { \/\/ used for input buffer only$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambuf
+vs	common/args/argsparser.h	/^                std::vector<std::string> *vs;$/;"	m	union:BGIQD::ARGS::args_union::data
+wall	common/time/timetools.h	/^        timeval wall;$/;"	m	struct:BGIQD::TIME::timeperoid
+wall	common/time/timetools.h	/^        timeval wall;$/;"	m	struct:BGIQD::TIME::timepoint
+~args_union	common/args/argsparser.h	/^            ~args_union()$/;"	f	struct:BGIQD::ARGS::args_union
+~detaillog	common/log/log.h	/^        virtual ~detaillog() {}$/;"	f	class:BGIQD::LOG::detaillog
+~gzstreambase	common/files/gzstream.cpp	/^gzstreambase::~gzstreambase() {$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambase
+~gzstreambuf	common/files/gzstream.h	/^    ~gzstreambuf() { close(); }$/;"	f	class:GZSTREAM_NAMESPACE::gzstreambuf
+~ilogtheme	common/log/log.h	/^        virtual ~ilogtheme() {}$/;"	f	class:BGIQD::LOG::ilogtheme
+~logfilter	common/log/logfilter.cpp	/^    logfilter::~logfilter()$/;"	f	class:BGIQD::LOG::logfilter
+~simplelog	common/log/log.h	/^        virtual ~simplelog() {}$/;"	f	class:BGIQD::LOG::simplelog
+~timer	common/log/log.h	/^        ~timer()$/;"	f	class:BGIQD::LOG::timer
