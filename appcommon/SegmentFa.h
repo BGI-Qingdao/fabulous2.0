@@ -22,7 +22,11 @@ namespace BGIQD {
                              //-1 : invalid
 
             void Init( const std::string & line ) {
-                sscanf(line.c_str() , ">%u_%d_%d",&scaff_id,&seq_index,&phase_id);
+                assert( ! line.empty() ) ;
+                if( line[0] == '>' )
+                    sscanf(line.c_str() , ">%u_%d_%d",&scaff_id,&seq_index,&phase_id);
+                else 
+                    sscanf(line.c_str() , "%u_%d_%d",&scaff_id,&seq_index,&phase_id);
             }
             bool Valid() const { 
                 return seq_index != -1 && phase_id != -1  && scaff_id != (unsigned int)-1 ;

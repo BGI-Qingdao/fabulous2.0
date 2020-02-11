@@ -27,7 +27,7 @@ source_o		= ${source_cpp:%.cpp=%.o}
 .cpp.o:
 	${CXX} ${DEUBG_CXX} -c $< -o $@
 
-jobs = Split 
+jobs = Split  MergePhaseResult 
 
 all :  ${jobs}
 
@@ -41,7 +41,16 @@ Split : clean ${Split_o} ${source_o} ../bin
 	mv $@ ../bin/
 
 
-jobs_o=  ${Split_o}
+
+
+MergePhaseResult_cpp = MergePhaseResult.cpp
+MergePhaseResult_o = MergePhaseResult.o
+MergePhaseResult : clean ${MergePhaseResult_o} ${source_o} ../bin
+	${CXX} ${MergePhaseResult_o} ${source_o} ${DEUBG_CXX} -o MergePhaseResult
+	mv $@ ../bin/
+
+
+jobs_o=  ${Split_o} ${MergePhaseResult_o}
 
 dirty	   =${jobs_o} ${jobs} ${source_o}
 

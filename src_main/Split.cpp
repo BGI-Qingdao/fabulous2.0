@@ -28,7 +28,11 @@ int main(int argc , char ** argv)
     DEFINE_ARG_REQUIRED(std::string, fa_2 , "xxx.2.fa");
     DEFINE_ARG_REQUIRED(std::string, idx_1 , "xxx.1.idx");
     DEFINE_ARG_REQUIRED(std::string, idx_2 , "xxx.2.idx");
-    DEFINE_ARG_REQUIRED(std::string, prefix , "output prefix");
+    DEFINE_ARG_REQUIRED(std::string, prefix , "output prefix\n\
+                                                  will output :\n\
+                                                      xxx.phb.1.fa\n\
+                                                      xxx.phb.2.fa\n\
+                                                      xxx.homo.fa");
     END_PARSE_ARGS
 
     // -------------------------------------------------------------

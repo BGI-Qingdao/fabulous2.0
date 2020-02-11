@@ -2,6 +2,7 @@
 
 apps="\
  Split \
+ MergePhaseResult \
 "
 
 jobs_o=" "
