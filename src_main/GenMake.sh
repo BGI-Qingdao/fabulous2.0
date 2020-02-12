@@ -3,6 +3,7 @@
 apps="\
  Split \
  MergePhaseResult \
+ GenSq \
 "
 
 jobs_o=" "
