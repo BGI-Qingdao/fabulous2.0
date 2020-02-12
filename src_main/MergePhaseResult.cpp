@@ -139,12 +139,12 @@ void loadIds( const std::string & file_name , MergeIdsElement::TrioBinResult t) 
         MergeIdsElement elem ;
         elem.trio_result = t ;
         elem.line = line ;
-        if( tmp.seq_index == 1 ){
+        if( tmp.phase_id == 1 ){
             elem.super_result = MergeIdsElement::Type_1 ;
-            data[tmp.scaff_id][tmp.phase_id].super_1 = elem ; 
-        } else if ( tmp.seq_index == 2 ){
+            data[tmp.scaff_id][tmp.seq_index].super_1 = elem ; 
+        } else if ( tmp.phase_id == 2 ){
             elem.super_result = MergeIdsElement::Type_2 ;
-            data[tmp.scaff_id][tmp.phase_id].super_2 = elem ; 
+            data[tmp.scaff_id][tmp.seq_index].super_2 = elem ; 
         } else assert(0) ; 
     }
     delete in;
