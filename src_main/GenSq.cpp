@@ -29,7 +29,7 @@ enum PhasedResult {
 
 struct IBlock {
     virtual BGIQD::SEQ::seq getSeq(PhasedResult type) const = 0 ;
-    virtual ~IBlock() = 0 ;
+    virtual ~IBlock() {} ;
 };
 
 struct HomoBlock : public IBlock {
@@ -72,10 +72,10 @@ struct NewScaff {
             return dynamic_cast<PhasedBlock*>(blocks.at(block_id)); 
         }
     }
-    BGIQD::SEQ::seq  getSeq( PhasedResult type , std::vector<int> & idx ) {
+    BGIQD::SEQ::seq  getSeq( PhasedResult type , std::vector<int> & idx ) const{
         BGIQD::SEQ::seq ret ;
         assert(idx.empty());
-        idx.push_back(id);
+        idx.push_back(0);
         assert(blocks.size() %2 == 1 );
         for( int i = 0 ; i < (int)blocks.size() ; i ++ ) {
             try {
@@ -185,9 +185,48 @@ void BuildPhasedBlocks() {
 }
 
 void PrintFinalDatas() {
-    std::vector<std::vector<int>> idx_chace ;
-
-
+    std::map<unsigned int , std::vector<int>> idx_chace ;
+    auto out1 = BGIQD::FILES::FileWriterFactory
+        ::GenerateWriterFromFileName(fNames.father_fa());
+    if( 0 == out1 ) FATAL("failed to open xxx.father.fa to write");
+    for( const auto & pair : scaffs ) {
+        (*out1)<<'>'<<pair.first<<'\n';
+        std::vector<int> idx;
+        auto seq = pair.second.getSeq(PhasedResult::Father,idx);        
+        (*out1)<<seq.Seq(80);
+        idx_chace[pair.first]=idx;
+    }
+    delete out1;
+    auto out2 = BGIQD::FILES::FileWriterFactory
+        ::GenerateWriterFromFileName(fNames.father_idx());
+    if( 0 == out2 ) FATAL("failed to open xxx.father.idx to write");
+    for( const auto & idx : idx_chace ) {
+        (*out2)<<idx.first ;
+        for( int i : idx.second) (*out2)<<' '<<i;
+        (*out2)<<'\n';
+    }
+    delete out2;
+    idx_chace.clear();
+    auto out3 = BGIQD::FILES::FileWriterFactory
+        ::GenerateWriterFromFileName(fNames.mother_fa());
+    if( 0 == out3 ) FATAL("failed to open xxx.mother.fa to write");
+    for( const auto & pair : scaffs ) {
+        (*out3)<<'>'<<pair.first<<'\n';
+        std::vector<int> idx;
+        auto seq = pair.second.getSeq(PhasedResult::Mother,idx);        
+        (*out3)<<seq.Seq(80);
+        idx_chace[pair.first]=idx;
+    }
+    delete out3;
+    auto out4 = BGIQD::FILES::FileWriterFactory
+        ::GenerateWriterFromFileName(fNames.mother_idx());
+    if( 0 == out4 ) FATAL("failed to open xxx.mother.idx to write");
+    for( const auto & idx : idx_chace ) {
+        (*out4)<<idx.first ;
+        for( int i : idx.second) (*out4)<<' '<<i;
+        (*out4)<<'\n';
+    }
+    delete out4;
 }
 
 ///////////////////////////////////////////////////////////
