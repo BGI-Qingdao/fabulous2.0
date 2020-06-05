@@ -27,7 +27,7 @@ source_o		= ${source_cpp:%.cpp=%.o}
 .cpp.o:
 	${CXX} ${DEUBG_CXX} -c $< -o $@
 
-jobs = Split  MergePhaseResult  GenSq 
+jobs = Split  MergePhaseResult  GenSq  classify 
 
 all :  ${jobs}
 
@@ -59,7 +59,16 @@ GenSq : clean ${GenSq_o} ${source_o} ../bin
 	mv $@ ../bin/
 
 
-jobs_o=  ${Split_o} ${MergePhaseResult_o} ${GenSq_o}
+
+
+classify_cpp = classify.cpp
+classify_o = classify.o
+classify : clean ${classify_o} ${source_o} ../bin
+	${CXX} ${classify_o} ${source_o} ${DEUBG_CXX} -o classify
+	mv $@ ../bin/
+
+
+jobs_o=  ${Split_o} ${MergePhaseResult_o} ${GenSq_o} ${classify_o}
 
 dirty	   =${jobs_o} ${jobs} ${source_o}
 

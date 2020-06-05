@@ -4,6 +4,7 @@ apps="\
  Split \
  MergePhaseResult \
  GenSq \
+ classify \
 "
 
 jobs_o=" "
