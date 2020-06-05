@@ -12,4 +12,4 @@ still in developing ...
 
 ## Example use 
 
-    try example/example.sh
+    try example.sh
